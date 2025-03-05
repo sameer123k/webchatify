@@ -1,20 +1,42 @@
-:root{
-    --primary:#4F4399;
-    --secondary:#fff;
+:root {
+    --primary: #4F4399;
+    --secondary: #eee;
 }
-.Sidebar{
+
+.Sidebar {
     background-color: var(--secondary);
     height: 100vh;
+    padding: 20px;
 }
-.Sidebar .sidebar-head{
+
+.Sidebar .sidebar-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.Sidebar .sidebar-head h4{
+
+.Sidebar .sidebar-head h4 {
     font-size: 20px;
     margin: 0;
 }
-.Sidebar .sidebar-head svg{
-  padding: 0 5px;
+
+.Sidebar .sidebar-head svg {
+    padding: 0 5px;
+}
+
+.Sidebar .searchBar input {
+    padding: 10px 10px 10px 40px;
+    width: 80%;
+    font-size: 13px;
+    border: 1px solid #cdcdcd;
+    border-radius: 30px;
+}
+.Sidebar .searchBar{
+    padding: 12px 0;
+    position: relative;
+}
+.Sidebar .searchBar > svg{
+    position: absolute;
+    left: 15px;
+    top: 23px;
 }

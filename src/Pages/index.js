@@ -6,7 +6,7 @@ import { Grid, Paper } from '@mui/material';
 
 export default function index() {
   return (
-    <Grid container spacing={2} padding={2}>
+    <Grid container spacing={2} >
       <Grid item lg={3}>
         <Sidebar />
       </Grid>
