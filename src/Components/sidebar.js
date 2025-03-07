@@ -11,9 +11,12 @@ import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
-
-
-
+import DP1 from '../images/dp.webp';
+import DP2 from '../images/dp2.jfif';
+import DP3 from '../images/dp3.jfif';
+import DP4 from '../images/dp5.jfif';
+import Community from '../images/community.webp';
+import Button from '@mui/material/Button';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -65,7 +68,7 @@ export default function sidebar() {
   return (
     <Box class="Sidebar">
       <Box class="sidebar-head">
-        <h4>Chats</h4>
+        <h4>WebChatify</h4>
         <Box>
           <a href="#"><MissedVideoCallIcon /></a>
           <a href="#"><AddCircleOutlineIcon /></a>
@@ -257,10 +260,46 @@ export default function sidebar() {
             </Box>
           </CustomTabPanel>
           <CustomTabPanel value={value} index={1}>
-            Item Two
+            <Box class="community">
+              <img src={Community} alt='community' />
+              <h5> Stay Connected with Community</h5>
+              <p>Embrace the power of community by staying engaged and fostering meaningful relationships. Whether through local events, online groups, or social networks, staying connected helps build support, share ideas, and create lasting bonds that enrich our lives.</p>
+              <Button variant="contained" disableElevation>
+                Start Your Community
+              </Button>
+            </Box>
           </CustomTabPanel>
           <CustomTabPanel value={value} index={2}>
-            Item Three
+            <Box class="status">
+              <Box class="status1">
+                <img src={DP1} alt="dp1" />
+                <Box>
+                  <h5> Sandeep Jaiswal </h5>
+                  <p> Today at 6:44pm </p>
+                </Box>
+              </Box>
+              <Box class="status1">
+                <img src={DP2} alt="dp2" />
+                <Box>
+                  <h5> Sonika Sharma </h5>
+                  <p> Today at 2:37pm </p>
+                </Box>
+              </Box>
+              <Box class="status1">
+                <img src={DP3} alt="dp2" />
+                <Box>
+                  <h5> Manisha Gupta </h5>
+                  <p> Today at 5:17pm </p>
+                </Box>
+              </Box>
+              <Box class="status1">
+                <img src={DP4} alt="dp2" />
+                <Box>
+                  <h5> Rakesh Yadav </h5>
+                  <p> Today at 9:42pm </p>
+                </Box>
+              </Box>
+            </Box>
           </CustomTabPanel>
         </Box>
       </Box>

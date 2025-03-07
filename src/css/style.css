@@ -19,7 +19,7 @@
 }
 
 .Sidebar .sidebar-head h4 {
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -81,4 +81,46 @@
 
 .messageBox .chatHeadings span {
     font-size: 13px;
+}
+
+.status {}
+
+.status .status1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 5px;
+    border-bottom: 1px solid #b0b0b0;
+}
+
+.status .status1 h5 {
+    margin: 0;
+}
+
+.status .status1 p {
+    margin: 0;
+    color: #6f6f6f;
+    font-size: 14px;
+    padding: 3px 0 0;
+}
+
+.status .status1 img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.community{
+    text-align: center;
+}
+.community>img {
+    width: auto;
+    height: 120px;
+}
+.community h5{
+    font-size: 18px;
+    margin: 0;
+}
+.community p{
+    font-size: 15px;
+    text-align: justify;
 }
