@@ -1,6 +1,12 @@
 :root {
-    --primary: #4F4399;
+    --primary: #551A8B;
     --secondary: #eee;
+}
+
+.Dashboard {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
 }
 
 .Sidebar {
@@ -24,15 +30,19 @@
 }
 
 .Sidebar .sidebar-head svg {
-    padding: 0 5px;
+    padding: 0 10px;
 }
 
 .Sidebar .searchBar input {
     padding: 10px 10px 10px 40px;
-    width: 80%;
+    width: 85%;
     font-size: 13px;
     border: 1px solid #cdcdcd;
     border-radius: 30px;
+}
+
+.Sidebar .tabs-section div[role="tablist"] {
+    justify-content: space-between;
 }
 
 .Sidebar .searchBar {
@@ -50,10 +60,12 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .messageBox .chatHeadings h5 {
     margin: 0;
+    color: var(--primary);
 }
 
 .messageBox .chatHeadings {
@@ -83,8 +95,6 @@
     font-size: 13px;
 }
 
-.status {}
-
 .status .status1 {
     display: flex;
     align-items: center;
@@ -95,6 +105,7 @@
 
 .status .status1 h5 {
     margin: 0;
+    color: var(--primary);
 }
 
 .status .status1 p {
@@ -109,18 +120,64 @@
     width: 35px;
     border-radius: 50%;
 }
-.community{
+
+.community {
     text-align: center;
 }
+
 .community>img {
     width: auto;
     height: 120px;
 }
-.community h5{
+
+.community h5 {
     font-size: 18px;
     margin: 0;
 }
-.community p{
+
+.community p {
     font-size: 15px;
     text-align: justify;
+}
+
+.main-content {
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.main-content .main-header {
+    width: 100%;
+    max-height: fit-content;
+    height: 100%;
+    background-color: var(--secondary);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    padding: 10px 0;
+}
+
+.main-content .main-header .header-Left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 15px;
+}
+
+.main-content .main-header .header-Left h6 {
+    margin: 0;
+    margin: 0;
+    color: var(--primary);
+    font-size: 0.83em;
+}
+
+.main-content .main-header .header-Left svg {
+    font-size: 30px;
+}
+
+.main-content .main-header .header-Right {
+    float: right;
+}
+
+.main-content .main-header .header-Right button svg {
+    font-size: 25px;
+    margin: 0 10px;
+    color: #383838;
 }

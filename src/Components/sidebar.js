@@ -15,8 +15,9 @@ import DP1 from '../images/dp.webp';
 import DP2 from '../images/dp2.jfif';
 import DP3 from '../images/dp3.jfif';
 import DP4 from '../images/dp5.jfif';
-import Community from '../images/community.webp';
+import Community from '../images/community.png';
 import Button from '@mui/material/Button';
+
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
