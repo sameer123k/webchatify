@@ -181,3 +181,40 @@
     margin: 0 10px;
     color: #383838;
 }
+
+.main-content .Main-chatBar {
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    background-color: #fff;
+}
+
+.main-content .main-bottom {
+    height: fit-content;
+    width: 100%;
+    background-color: #EEEEEE;
+    padding: 13px 20px;
+}
+
+.main-content .main-searchBar {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.main-content .main-searchBar>input {
+    max-width: 90%;
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.main-content .main-searchBar svg {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    font-size: 22px;
+    color: black;
+}

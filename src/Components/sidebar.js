@@ -17,6 +17,7 @@ import DP3 from '../images/dp3.jfif';
 import DP4 from '../images/dp5.jfif';
 import Community from '../images/community.png';
 import Button from '@mui/material/Button';
+import Logo from '../images/logo.png';
 
 
 function CustomTabPanel(props) {
@@ -69,7 +70,7 @@ export default function sidebar() {
   return (
     <Box class="Sidebar">
       <Box class="sidebar-head">
-        <h4>WebChatify</h4>
+        <img src={Logo} alt='loog' height={28} />
         <Box>
           <a href="#"><MissedVideoCallIcon /></a>
           <a href="#"><AddCircleOutlineIcon /></a>

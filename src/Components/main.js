@@ -1,15 +1,14 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import soonImg from '../images/soon.avif';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
-import MissedVideoCallIcon from '@mui/icons-material/MissedVideoCall';
-import SearchIcon from '@mui/icons-material/Search';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
+import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
+import Main_header from '../Components/main_header';
+import MicIcon from '@mui/icons-material/Mic';
+import ControlPointIcon from '@mui/icons-material/ControlPoint';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#fff',
@@ -24,41 +23,34 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function main() {
   return (
-    <Box class="main-content">
-      <Box class="main-header">
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={2} sx={{
-            justifyContent: "center",
-            alignItems: "center",
-          }}>
-            <Grid item xs={6}>
-              <Box class="header-Left">
-                <PeopleAltIcon />
-                <h6> Mahesh Kumar Singh</h6>
-              </Box>
-            </Grid>
-            <Grid item xs={6}>
-              <Box class="header-Right">
-                <Box
-                  sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    '& > *': {
-                      m: 0,
-                    },
-                  }}
-                >
-                  <ButtonGroup variant="text" aria-label="Basic button group">
-                    <Button>  <MissedVideoCallIcon /></Button>
-                    <Button>    <SearchIcon /></Button>
-                    <Button>  <MoreVertIcon /></Button>
-                  </ButtonGroup>
-                </Box>
-              </Box>
-            </Grid>
+    <Box className="main-content">
+
+      <Box>
+        <Grid container className="Main-chatBar">
+          <Grid item xs={12}>
+            <Main_header />
           </Grid>
-        </Box>
+        </Grid>
+      </Box>
+      <Box>
+        <Grid container sx={{ display: 'flex', alignItems: 'center' }} className="main-bottom">
+          <Grid item xs={1}>
+            <Box>
+             <a href='#'> <ControlPointIcon /></a>
+            </Box>
+          </Grid>
+          <Grid item xs={10}>
+            <Box className="main-searchBar">
+              <input type="text" placeholder='Type a message' />
+              <EmojiEmotionsIcon />
+            </Box>
+          </Grid>
+          <Grid item xs={1}>
+            <Box sx={{ float: 'right' }}>
+              <a href='#'><MicIcon /></a>
+            </Box>
+          </Grid>
+        </Grid>
       </Box>
     </Box >
   )
