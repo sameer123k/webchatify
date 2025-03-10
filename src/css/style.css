@@ -168,6 +168,11 @@
     font-size: 0.83em;
 }
 
+.main-content .main-header .header-Left span {
+    font-size: 13px;
+    color: green;
+}
+
 .main-content .main-header .header-Left svg {
     font-size: 30px;
 }
@@ -183,10 +188,11 @@
 }
 
 .main-content .Main-chatBar {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 120px);
     overflow-y: scroll;
     scrollbar-width: thin;
     background-color: #fff;
+    padding: 20px 30px;
 }
 
 .main-content .main-bottom {
@@ -197,10 +203,10 @@
 }
 
 .main-content .main-searchBar {
-    background-color: #fff;
     width: 100%;
     height: auto;
     position: relative;
+    overflow: hidden;
 }
 
 .main-content .main-searchBar>input {
@@ -217,4 +223,36 @@
     top: 7px;
     font-size: 22px;
     color: black;
+}
+
+.main-content .Main-chatBar .MessageBox-Left {
+    background-color: var(--secondary);
+    max-width: fit-content;
+    padding: 5px 15px;
+    border-radius: 5px;
+    float: left;
+    font-size: 15px;
+}
+
+.main-content .Main-chatBar .MessageBox-Right {
+    background-color: var(--secondary);
+    max-width: fit-content;
+    padding: 5px 15px;
+    border-radius: 5px;
+    float: right;
+    font-size: 15px;
+}
+
+.main-content .Main-chatBar .MessageBox-Right.checked>svg {
+    font-size: 15px;
+    color: green;
+    margin-bottom: -3px;
+    padding-left: 5px;
+}
+
+.main-content .main-bottom .main-searchBar .send_icon {
+    position: absolute;
+    right: 10%;
+    top: 1px;
+    cursor: pointer;
 }

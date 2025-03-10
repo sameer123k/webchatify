@@ -19,7 +19,10 @@ export default function main_header() {
           <Grid item xs={6}>
             <Box className="header-Left">
               <PeopleAltIcon />
-              <h6> Mahesh Kumar Singh</h6>
+              <Box>
+                <h6> Mahesh Kumar Singh</h6>
+                <span>Online</span>
+              </Box>
             </Box>
           </Grid>
           <Grid item xs={6}>
