@@ -13,7 +13,7 @@
     background-color: var(--secondary);
     height: auto;
     padding: 20px;
-    height: 100vh;
+    height: calc(100vh - 45px);
     overflow-y: scroll;
     scrollbar-width: thin;
 }
@@ -255,4 +255,22 @@
     right: 10%;
     top: 1px;
     cursor: pointer;
+}
+
+/* mobile view  */
+@media only screen and (max-width:767px) {
+    .Dashboard {
+        height: 0;
+    }
+
+    .mobile-View {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-View a {
+        margin: 0;
+    }
 }
