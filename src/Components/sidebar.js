@@ -68,21 +68,21 @@ export default function sidebar() {
     }),
   }));
   return (
-    <Box class="Sidebar">
-      <Box class="sidebar-head">
+    <Box className="Sidebar">
+      <Box className="sidebar-head">
         <img src={Logo} alt='loog' height={28} />
         <Box>
           <a href="#"><MissedVideoCallIcon /></a>
           <a href="#"><AddCircleOutlineIcon /></a>
         </Box>
       </Box>
-      <Box class="searchBar">
+      <Box className="searchBar">
         <input type="text" placeholder='Search Here...' />
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
         </svg>
       </Box>
-      <Box class="tabs-section">
+      <Box className="tabs-section">
         <Box sx={{ width: '100%' }}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
@@ -92,9 +92,9 @@ export default function sidebar() {
             </Tabs>
           </Box>
           <CustomTabPanel value={value} index={0} padding={0}>
-            <Box class="messageBox">
+            <Box className="messageBox">
               <AccountCircleIcon />
-              <Box class="chatHeadings">
+              <Box className="chatHeadings">
                 <Box>
                   <h5> Mahesh Kumar Singh</h5>
                   <p> i call you later ...</p>
@@ -104,9 +104,9 @@ export default function sidebar() {
                 </Box>
               </Box>
             </Box>
-            <Box class="messageBox">
+            <Box className="messageBox">
               <AccountCircleIcon />
-              <Box class="chatHeadings">
+              <Box className="chatHeadings">
                 <Box>
                   <h5>John Doe</h5>
                   <p> can we talk together... </p>
@@ -116,9 +116,9 @@ export default function sidebar() {
                 </Box>
               </Box>
             </Box>
-            <Box class="messageBox">
+            <Box className="messageBox">
               <AccountCircleIcon />
-              <Box class="chatHeadings">
+              <Box className="chatHeadings">
                 <Box>
                   <h5> Rahul Tripathi </h5>
                   <p> busy right now ... </p>
@@ -128,9 +128,9 @@ export default function sidebar() {
                 </Box>
               </Box>
             </Box>
-            <Box class="messageBox">
+            <Box className="messageBox">
               <AccountCircleIcon />
-              <Box class="chatHeadings">
+              <Box className="chatHeadings">
                 <Box>
                   <h5> Aakash Verma </h5>
                   <p> am driving right now... </p>
@@ -140,9 +140,9 @@ export default function sidebar() {
                 </Box>
               </Box>
             </Box>
-            <Box class="messageBox">
+            <Box className="messageBox">
               <AccountCircleIcon />
-              <Box class="chatHeadings">
+              <Box className="chatHeadings">
                 <Box>
                   <h5> Sonika Sharma </h5>
                   <p> cooking right now...</p>
@@ -152,9 +152,9 @@ export default function sidebar() {
                 </Box>
               </Box>
             </Box>
-            <Box class="messageBox">
+            <Box className="messageBox">
               <AccountCircleIcon />
-              <Box class="chatHeadings">
+              <Box className="chatHeadings">
                 <Box>
                   <h5> Sonu Sharma </h5>
                   <p> where are you from send...</p>
@@ -164,9 +164,9 @@ export default function sidebar() {
                 </Box>
               </Box>
             </Box>
-            <Box class="messageBox">
+            <Box className="messageBox">
               <AccountCircleIcon />
-              <Box class="chatHeadings">
+              <Box className="chatHeadings">
                 <Box>
                   <h5> Nitesh </h5>
                   <p> out of state can we talk... </p>
@@ -176,9 +176,9 @@ export default function sidebar() {
                 </Box>
               </Box>
             </Box>
-            <Box class="messageBox">
+            <Box className="messageBox">
               <AccountCircleIcon />
-              <Box class="chatHeadings">
+              <Box className="chatHeadings">
                 <Box>
                   <h5>John Doe</h5>
                   <p> can we talk together... </p>
@@ -188,9 +188,9 @@ export default function sidebar() {
                 </Box>
               </Box>
             </Box>
-            <Box class="messageBox">
+            <Box className="messageBox">
               <AccountCircleIcon />
-              <Box class="chatHeadings">
+              <Box className="chatHeadings">
                 <Box>
                   <h5> Rahul Tripathi </h5>
                   <p> busy right now ... </p>
@@ -200,9 +200,9 @@ export default function sidebar() {
                 </Box>
               </Box>
             </Box>
-            <Box class="messageBox">
+            <Box className="messageBox">
               <AccountCircleIcon />
-              <Box class="chatHeadings">
+              <Box className="chatHeadings">
                 <Box>
                   <h5> Aakash Verma </h5>
                   <p> am driving right now... </p>
@@ -212,9 +212,9 @@ export default function sidebar() {
                 </Box>
               </Box>
             </Box>
-            <Box class="messageBox">
+            <Box className="messageBox">
               <AccountCircleIcon />
-              <Box class="chatHeadings">
+              <Box className="chatHeadings">
                 <Box>
                   <h5> Rahul Tripathi </h5>
                   <p> busy right now ... </p>
@@ -224,9 +224,9 @@ export default function sidebar() {
                 </Box>
               </Box>
             </Box>
-            <Box class="messageBox">
+            <Box className="messageBox">
               <AccountCircleIcon />
-              <Box class="chatHeadings">
+              <Box className="chatHeadings">
                 <Box>
                   <h5> Aakash Verma </h5>
                   <p> am driving right now... </p>
@@ -236,9 +236,9 @@ export default function sidebar() {
                 </Box>
               </Box>
             </Box>
-            <Box class="messageBox">
+            <Box className="messageBox">
               <AccountCircleIcon />
-              <Box class="chatHeadings">
+              <Box className="chatHeadings">
                 <Box>
                   <h5> Sonika Sharma </h5>
                   <p> cooking right now...</p>
@@ -248,9 +248,9 @@ export default function sidebar() {
                 </Box>
               </Box>
             </Box>
-            <Box class="messageBox">
+            <Box className="messageBox">
               <AccountCircleIcon />
-              <Box class="chatHeadings">
+              <Box className="chatHeadings">
                 <Box>
                   <h5> Sonu Sharma </h5>
                   <p> where are you from send...</p>
@@ -262,7 +262,7 @@ export default function sidebar() {
             </Box>
           </CustomTabPanel>
           <CustomTabPanel value={value} index={1}>
-            <Box class="community">
+            <Box className="community">
               <img src={Community} alt='community' />
               <h5> Stay Connected with Community</h5>
               <p>Embrace the power of community by staying engaged and fostering meaningful relationships. Whether through local events, online groups, or social networks, staying connected helps build support, share ideas, and create lasting bonds that enrich our lives.</p>
@@ -272,29 +272,29 @@ export default function sidebar() {
             </Box>
           </CustomTabPanel>
           <CustomTabPanel value={value} index={2}>
-            <Box class="status">
-              <Box class="status1">
+            <Box className="status">
+              <Box className="status1">
                 <img src={DP1} alt="dp1" />
                 <Box>
                   <h5> Sandeep Jaiswal </h5>
                   <p> Today at 6:44pm </p>
                 </Box>
               </Box>
-              <Box class="status1">
+              <Box className="status1">
                 <img src={DP2} alt="dp2" />
                 <Box>
                   <h5> Sonika Sharma </h5>
                   <p> Today at 2:37pm </p>
                 </Box>
               </Box>
-              <Box class="status1">
+              <Box className="status1">
                 <img src={DP3} alt="dp2" />
                 <Box>
                   <h5> Manisha Gupta </h5>
                   <p> Today at 5:17pm </p>
                 </Box>
               </Box>
-              <Box class="status1">
+              <Box className="status1">
                 <img src={DP4} alt="dp2" />
                 <Box>
                   <h5> Rakesh Yadav </h5>
