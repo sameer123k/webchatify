@@ -20,7 +20,7 @@ export default function main_header() {
             <Box className="header-Left">
               <PeopleAltIcon />
               <Box>
-                <h6> Mahesh Kumar Singh</h6>
+                <h6> Sameer Khan</h6>
                 <span>Online</span>
               </Box>
             </Box>
